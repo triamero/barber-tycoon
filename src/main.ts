@@ -1,5 +1,5 @@
 import * as Phaser from "phaser";
-import {BootScene, WelcomeScene} from "./scenes";
+import {BootScene, GameHudScene, GameScene, WelcomeScene} from "./scenes";
 
 class Main extends Phaser.Game {
     constructor() {
@@ -8,12 +8,13 @@ class Main extends Phaser.Game {
             width: 600,
             height: 800,
             parent: "root",
+            backgroundColor: 0xada286,
             scale: {
                 autoCenter: Phaser.Scale.Center.CENTER_BOTH,
                 mode: Phaser.Scale.ScaleModes.FIT
             },
             render: {
-                transparent: true
+                //transparent: true
             },
             audio: {
                 noAudio: true
@@ -23,6 +24,8 @@ class Main extends Phaser.Game {
         super(config);
 
         this.scene.add("boot", BootScene, false);
+        this.scene.add("game", GameScene, false);
+        this.scene.add("game-hud", GameHudScene, false);
         this.scene.add("welcome", WelcomeScene, false);
 
         this.scene.start("boot");

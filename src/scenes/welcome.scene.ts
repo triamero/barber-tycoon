@@ -5,20 +5,9 @@ export class WelcomeScene extends Phaser.Scene {
     // noinspection JSUnusedGlobalSymbols
     create() {
 
-        this.add.text(150, 300, "YOU'RE NOT SUPPOSED TO BE HERE. GO AWAY", {
-            fontSize: "24px",
-            fontFamily: "Arial",
-            color: "#000000",
-            wordWrap: {
-                useAdvancedWrap: true,
-                width: 300
-            }
-        });
+        this.add.bitmapText(150, 300, "fnt", "YOU'RE NOT SUPPOSED", 36).setTintFill(0x000000);
+        this.add.bitmapText(150, 340, "fnt", "TO BE HERE. GO AWAY", 36).setTintFill(0x000000);
 
-        this.add.text(275, 370, "- LEVELORD", {
-            fontSize: "24px",
-            fontFamily: "Arial",
-            color: "#000000"
-        });
+        this.add.bitmapText(275, 400, "fnt", "- LEVELORD", 32).setTintFill(0x000000);
     }
 }

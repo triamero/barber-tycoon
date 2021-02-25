@@ -1,15 +1,14 @@
 {
-  "name": "phaser-game-template",
-  "version": "1.0.0",
+  "name": "barber-tycoon",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "serve": "webpack serve --config webpack.dev.js",
     "publish": "webpack --config webpack.release.js"
   },
   "repository": {
     "type": "git",
-    "url": "ssh://git@github.com:22/triamero/phaser-game-template.git"
+    "url": "ssh://git@github.com:22/triamero/barber-tycoon.git"
   },
   "author": "triamero",
   "license": "MIT",
