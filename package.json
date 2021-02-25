@@ -1,0 +1,33 @@
+{
+  "name": "phaser-game-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve --config webpack.dev.js",
+    "publish": "webpack --config webpack.release.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:22/triamero/phaser-game-template.git"
+  },
+  "author": "triamero",
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "^3.52.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^7.0.0",
+    "html-webpack-plugin": "^5.2.0",
+    "node-json-minify": "^1.0.0",
+    "terser-webpack-plugin": "^5.1.1",
+    "ts-loader": "^8.0.17",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
+    "typescript": "^4.2.2",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3",
+    "write-file-webpack-plugin": "^4.5.1"
+  }
+}
